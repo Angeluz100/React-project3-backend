@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const placeSchema = new Schema({
 
     place: String, 
-    comment: String,
+    comments: String,
 
 }, {timestamps: true});
 

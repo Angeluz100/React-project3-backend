@@ -1,3 +1,4 @@
+const place = require('../models/place');
 const Place = require('../models/place');
 
 
@@ -14,8 +15,8 @@ async function index(req, res) {
 
 async function create(req, res) {
     try {
-       const skill = await Skill.create(req.body);
-       res.status(201).json(skill);
+       const place = await Place.create(req.body);
+       res.status(201).json(place);
     // index(req, res);
     } catch (error) {
         res.status(401).json({ error: 'something went wrong' })      
